@@ -1,0 +1,138 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+    --grey: hsl(0, 0%, 95%); /*background, headings, buttons*/
+}
+
+.grid-container {
+    display: grid;
+}
+
+html {
+    font-size: 0.9375rem;
+}
+
+body {
+    background-color:var(--grey);
+    padding: 5rem 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    border-radius:0.4rem;
+    overflow: hidden;
+    width: 14rem;
+
+}
+
+.sedans, .suvs, .luxury {
+
+    padding: 2rem 2.1rem;
+}
+
+.sedans {
+    background-color: var(--orange);
+}
+
+.suvs {
+    background-color: var(--cyan); 
+}
+
+.luxury {
+    background-color: var(--dark-cyan);
+}
+
+img {
+    width: 2.5rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    color: var(--grey);
+    font-family: "Big shoulders display", sans serif;
+    text-transform: uppercase;
+    letter-spacing: 0.005rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+p {
+    color: var(--white);
+    font-family: "Lexend Deca", sans serif;
+    font-size: 0.65rem;
+    line-height: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+button {
+    background-color:var(--grey);
+    border:none;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    width: 6.5rem;
+    font-family: "Lexend Deca", sans serif;
+    font-size: 0.65rem;
+    margin-bottom: 0.21rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.sedans button {
+    color: var(--orange);
+}
+
+.suvs button {
+    color: var(--cyan);
+}
+
+.luxury button {
+    color: var(--dark-cyan);
+}
+
+@media screen and (min-width:520px) {
+
+    html {
+        font-size: 1rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        min-width: 35rem;
+    }
+
+    p{
+        margin-bottom: 3.5rem;
+    }
+}
+
+
+@media screen and (min-width:850px) {
+
+    html {
+        font-size: 1.3rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        width: 40rem;
+    }
+
+    p{
+        margin-bottom: 3.5rem;
+    }
+}
