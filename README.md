@@ -22,8 +22,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/LaurieGinale/Frontend-Mentor-3rd-Challenge-3-Column-Card
+- Live Site URL:  https://laurieginale.github.io/Frontend-Mentor-3rd-Challenge-3-Column-Card/
 
 ## My process
 
