@@ -34,7 +34,7 @@
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- and y head ;-) 
+- and my head ;-) 
 
 ### What I learned
 
